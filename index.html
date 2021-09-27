@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of created websites." />
+    <meta
+      property="og:title"
+      content="Portfolio - Build websites on HTML5 and CSS3"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio is an imginary website. Build in HTML5 and CSS3 from scratch, based on mobile-first approach."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://randomuser.me/api/portraits/men/46.jpg"
+    />
+    <meta property="og:url" content="https://sabihtest.bilalaslam.net/" />
+    <title>Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <nav class="nav collapsible">
+          <a href="index.html" aria-label="Portfolio" class="nav__brand">
+            <img src="assets/images/logo.png" alt="website logo" />
+          </a>
+          <img
+            src="assets/images/menu.svg"
+            alt="menu icon"
+            class="icon nav__toggler"
+          />
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#work">work</a></li>
+            <li class="nav__item"><a href="#about">about me</a></li>
+            <li class="nav__item"><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="block hero">
+      <div class="container grid grid--cols-2">
+        <header data-aos="zoom-in-up" class="block__header hero__content">
+          <h1 class="block__heading">lewis nathaniel</h1>
+          <p class="hero__tagline">web designer</p>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="assets/images/linkedin.svg" alt="linkedin" class="icon" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="assets/images/facebook.svg" alt="facebook" class="icon" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="assets/images/twitter.svg" alt="twitter" class="icon" />
+          </a>
+          <div class="hero__btn">
+            <a href="#work" class="btn btn--primary">see my work</a>
+          </div>
+        </header>
+        <picture data-aos="zoom-in" class="hero__image">
+          <source
+            type="image/webp"
+            srcset="assets/images/hero.webp 1x, assets/images/hero@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="assets/images/hero.jpg 1x, assets/images/hero@2x.jpg 2x"
+          />
+          <img src="assets/images/hero@2x.jpg" alt="hero pic" />
+        </picture>
+      </div>
+    </section>
+
+    <!-- Section Work -->
+    <section id="work" class="block work">
+      <div data-aos="zoom-in" class="container grid grid--cols-3">
+        <div class="card block__header">
+          <div class="card__header">
+            <img src="assets/images/project.webp" alt="project" />
+          </div>
+          <div class="card__body">
+            <h2 class="block__heading">hhh</h2>
+          </div>
+        </div>
+        <div class="card block__header">
+          <div class="card__header">
+            <img src="assets/images/project.webp" alt="project" />
+          </div>
+          <div class="card__body">
+            <h2 class="block__heading">hhh</h2>
+          </div>
+        </div>
+        <div class="card block__header">
+          <div class="card__header">
+            <img src="assets/images/project.webp" alt="project" />
+          </div>
+          <div class="card__body">
+            <h2 class="block__heading">hhh</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section About -->
+    <section id="about" class="block about">
+      <div class="container grid grid--cols-2">
+        <picture data-aos="fade-right" class="hero__image">
+          <source
+            type="image/webp"
+            srcset="assets/images/about.webp 1x, assets/images/about@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="assets/images/about.jpg 1x, assets/images/about@2x.jpg 2x"
+          />
+          <img src="assets/images/about@2x.jpg" alt="about pic" />
+        </picture>
+        <header data-aos="zoom-in-left" class="block__header">
+          <h2 class="block__heading">about me</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, odit.
+            Dolores, modi aut. Blanditiis hic sit quibusdam? A beatae ad
+            excepturi architecto! At, obcaecati odit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum
+            nesciunt amet possimus dignissimos illum dolorum reprehenderit odit,
+            hic asperiores?
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section data-aos="zoom-in" id="contact" class="block contact">
+      <div class="container">
+        <header class="block__header">
+          <h2 class="block__heading">let&apos;s talk&excl;</h2>
+          <p>send me an email</p>
+        </header>
+        <form action="#" method="post">
+          <label for="email" class="form-label">Email Address</label>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              class="input"
+              placeholder="Email address"
+              minlength="5"
+              maxlength="255"
+              required
+            />
+          </div>
+          <label for="request" class="form-label">Request</label>
+          <div class="input-group">
+            <textarea
+              id="request"
+              class="input"
+              placeholder="Type your request"
+              rows="5"
+              maxlength="255"
+              required
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <button type="submit" class="btn btn--primary">send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__tagline">&copy; 2021 &dash; Portfolio</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
